@@ -32,7 +32,7 @@ Action = MsgBox("Download directly?", vbYesNo, Title)
 If Action = vbYes Then
   Shell.Run Target, 9
 Else
-  Set Shortcut = Shell.CreateShortcut("NVIDIA Driver Download.lnk")
+  Set Shortcut = Shell.CreateShortcut("NVIDIA Driver Download.url")
   Shortcut.TargetPath = Target
   Shortcut.Save
 End If
